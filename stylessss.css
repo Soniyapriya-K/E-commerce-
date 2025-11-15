@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    background: #ff1493;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.hero {
+    background-color:antiquewhite;
+    padding: 120px;
+    text-align: center;
+    color: #000;
+}
+.hero button {
+    margin: 10px;
+    padding: 10px 20px;
+    background: #ff1493;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* General Sections */
+.section {
+    background-color:beige;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.product-card {
+    width: 220px;
+    padding: 15px;
+    border: 1px solid #3d313a;
+}
+.product-card img {
+    width: 100px;
+    height: auto;
+}
+.product-card button {
+    width: 100px;
+    padding: 10px;
+    margin-top: 8px;
+    background: #ff1493;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#about{
+    background-color: antiquewhite;
+}
+p{
+    font: size 35px;
+}
+/* Popup Forms */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(219, 124, 198, 0.6);
+}
+.popup-box {
+    background: rgb(237, 114, 224);
+    width: 300px;
+    padding: 20px;
+    margin: 100px auto;
+    text-align: center;
+}
+.popup-box input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+}

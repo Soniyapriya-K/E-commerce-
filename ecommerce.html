@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DreamWear - Online Dress Store</title>
+    <link rel="stylesheet" href="stylessss.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <center>
+        <div class="logo">DreamWear</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#collection">Collections</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </center>
+    </nav>
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h1>Shop the Latest Fashion!!</h1>
+        <h2>Where Style Meets Comfort!!!</h2>
+        <p>Trendy. Stylish. Affordable.</p>
+        <button onclick="openLogin()">Login</button>
+        <button onclick="openRegister()">Register</button>
+    </section>
+
+    <!-- Dress Collection -->
+    <section id="collection" class="section">
+        <h2>Our Dress Collection</h2>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="kurti.jpg">
+                <h3>Kurti top </h3>
+                <p>₹399</p>
+                <button onclick="addCart()">Add to Cart</button>
+                <button onclick="addWishlist()">Wishlist</button>
+            </div>
+
+            <div class="product-card">
+                <img src="blue.jpg">
+                <h3>Party blue Dress</h3>
+                <p>₹799</p>
+                <button onclick="addCart()">Add to Cart</button>
+                <button onclick="addWishlist()">Wishlist</button>
+            </div>
+             <div class="product-card">
+                <img src="set.jpg">
+                <h3> Kurti set </h3>
+                <p>₹499</p>
+                <button onclick="addCart()">Add to Cart</button>
+                <button onclick="addWishlist()">Wishlist</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About DreamWear</h2>
+        <p> DreamWear is your go-to online dress store, offering stylish outfits for every occasion. We bring premium fashion at affordable prices.At dreamwear,we believe that every outfit tells a story - let yours shine with elegance and style!!.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Email: support@dreamwear.com</p>
+        <p>Phone: ‪+91 98765 43210‬</p>
+    </section>
+
+    <!-- Login Popup -->
+    <div class="popup" id="loginForm">
+        <div class="popup-box">
+            <h3>Login</h3>
+            <input type="email" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPass" placeholder="Password">
+            <button onclick="validateLogin()">Login</button>
+  <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <!-- Register Popup -->
+    <div class="popup" id="registerForm">
+        <div class="popup-box">
+            <h3>Register</h3>
+            <input type="text" id="regName" placeholder="Full Name">
+            <input type="email" id="regEmail" placeholder="Email">
+            <input type="password" id="regPass" placeholder="Password">
+            <button onclick="validateRegister()">Register</button>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
